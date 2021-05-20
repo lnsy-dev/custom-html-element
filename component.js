@@ -16,6 +16,11 @@ class HansElement extends HTMLElement{
     // name is the attribute name that has changed
     // old_value is the old name of the attribute
     // new_value is the new name of the attribute
+    
+    // To change update this element, access it like any other
+    // HTML element and use setAttribute() to make changes.
+    // an example:
+    // document.querySelector('hans-element').setAttribute('message', 'Hello World')
   }
 }
 
