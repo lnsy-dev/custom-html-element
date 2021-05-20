@@ -3,7 +3,7 @@ class HansElement extends HTMLElement{
     // this function runs when the component is connected to the dom. 
     // the this keyword refers to the HTML component itself, and you
     // can treat it as any DOM object
-    this.innerHTML = '<h1>Hans Element</h1>
+    this.innerHTML = '<h1>Hans Element</h1>'
   }
   
   static get observedAttributes() {
