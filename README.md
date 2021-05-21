@@ -1,5 +1,13 @@
-# hans-element
+# custom-element
 
-This is my standard boilerplate I use for web components. I created it because I couldn't find this written down anywhere. It provides react-like fuss with none of the muss! It is as simple as possible and has nothing fancy in it. 
+This is an implementation of the HTML Custom Element API: https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements
+" Living code explains itself, somewhat, but the real value is in having a haunted town full of horror stories."
+  --𝙙𝙙𝙖𝙮
+  
+Only other programmers believe that below this comment lies several John Grisham novels worth of code.
 
-For convenience and instruction I have included an index.html file that uses the component.
+I use this instead of React, Vue or Angular. Yes, it won't scale because __x__. You're stuff won't ship because
+you don't know how to actually write javascript 🤷.
+
+A demo:
+https://codepen.io/lindseymysse/pen/ExWZEEr
