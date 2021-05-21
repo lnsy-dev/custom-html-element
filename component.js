@@ -17,7 +17,7 @@ degree that only a truly toxic workplace can generate.
 Anyway, I was fired the first week because my code contribution was in the negative thousands. 
 I deleted a file of nothing but dead code that everyone left there. No I didn't break a test. No it shipped just fine. 
 I just did what every programmer should always try to do: make my code as simple as possible. I consider it an 
-honorable firing, a true testament to my dedication to the hacker cause. 
+honorable firing, a true testament to my dedication to the hacker ethic. 
 
 ANYWAY: 
 
