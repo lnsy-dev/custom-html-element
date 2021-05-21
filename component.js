@@ -1,5 +1,6 @@
 /*
 " Living code explains itself, somewhat, but the real value is in having a haunted town full of horror stories."
+  --𝙙𝙙𝙖𝙮
 
 A STORY: 
 I once got hired at a programming job and was told that I need to write a thousand lines of code a week. 
