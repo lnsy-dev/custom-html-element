@@ -3,14 +3,13 @@
   --𝙙𝙙𝙖𝙮
 
 A STORY: 
-I once got hired at a programming job and was told that I need to write a thousand lines of code a week. 
-I don't know the reason it was a thousand but I can assure you it was capricious. 
-
+I once got hired at a programming job and was told that I needed to write a thousand lines of code a week. 
+I don't know the reason it was a thousand but I can assure you it was capricious. Another important detail:
 People didn't really say hi to eachother in this place. 
 
-There were novels worth of comments with lots of lists in this codebase. Normally I'm all about lists and long
-detailed comments in code but this was done to that obnoxious, psychotic degree that only a truly toxic
-workplace can generate. True idiocy built on idiocy. 
+There were novels worth of comments with lots of lists in this codebase. Normally I'm all about long
+detailed comments with detailed lists in the code,  but this was done to that obnoxious, psychotic
+degree that only a truly toxic workplace can generate. 
 
 Anyway, I was fired the first week because my code contribution was in the negative thousands. 
 I deleted a file of nothing but dead code that everyone left there. No I didn't break a test. No it shipped just fine. 
