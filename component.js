@@ -10,6 +10,10 @@ Only other programmers believe that below this comment lies several John Grisham
 I use this instead of React, Vue or Angular. Yes, it won't scale because __x__. You're stuff won't ship because
 you don't know how to actually write javascript 🤷.
 
+A demo:
+
+https://codepen.io/lindseymysse/pen/ExWZEEr
+
 */
 
 
