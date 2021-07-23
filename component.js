@@ -15,14 +15,14 @@ https://codepen.io/lindseymysse/pen/ExWZEEr
 
 
 
-class HansElement extends HTMLElement{
+class CustomElement extends HTMLElement{
   connectedCallback(){
     /* 
       this function runs when the component is connected to the dom. 
       the this keyword refers to the HTML component itself, and you
       can treat it as any DOM object 
     */
-    this.innerHTML = '<h1>Hans Element</h1>'
+    this.innerHTML = '<h1>Custom Element</h1>'
   }
   
   static get observedAttributes() {
@@ -40,7 +40,7 @@ class HansElement extends HTMLElement{
       To change update this element, access it like any other
       HTML element and use setAttribute() to make changes.
       an example:
-      document.querySelector('hans-element').setAttribute('message', 'Hello World')
+      document.querySelector('custom-element').setAttribute('message', 'Hello World')
     */
   }
 }
@@ -52,4 +52,4 @@ class HansElement extends HTMLElement{
   value in the quotation marks. 
 */
 
-customElements.define('hans-element', HansElement)
+customElements.define('custom-element', CustomElement)
