@@ -1,6 +1,6 @@
 # custom-html-element
 
-This is an implementation of the HTML Custom Element API: https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements
+This is a boilerplate of the HTML Custom Element API: https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements
 
 "Living code explains itself, somewhat, but the real value is in having a haunted town full of horror stories."
   --𝙙𝙙𝙖𝙮
