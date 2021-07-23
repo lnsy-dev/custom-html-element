@@ -1,4 +1,4 @@
-# custom-element
+# custom-html-element
 
 This is an implementation of the HTML Custom Element API: https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements
 
