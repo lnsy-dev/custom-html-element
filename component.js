@@ -47,7 +47,7 @@ class CustomElement extends HTMLElement{
 
 /*
   this component can be placed in the document using the notation
-  <hans-element name="element name here"></hans-element>
+  <custom-element name="element name here"></custom-element>
   to change the name of the element in the dom, change the 
   value in the quotation marks. 
 */
