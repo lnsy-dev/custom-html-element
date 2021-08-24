@@ -23,20 +23,25 @@ class CustomElement extends HTMLElement{
       can treat it as any DOM object 
     */
     
-    this.name = this.getAttribute('name')
-    if(this.name === null){
-      this.name = 'CUSTOM ELEMENT'
+    // get the attribute called name, if it is null assign a new one
+    this.title = this.getAttribute('title')
+    if(this.title === null){
+      this.title = 'CUSTOM ELEMENT'
     }
     
-    this.innerHTML = `<h1>${this.name}</h1>`
+    this.innerHTML = `<h1>${this.title}</h1>`
   }
   
   static get observedAttributes() {
     // an array of attribute names you want to watch for this component
-    return [''];
+    return ['title'];
   }
 
   attributeChangedCallback(name, old_value, new_value){
+    if(name  === 'title'){
+      this.title = new_value
+      this.innerHTML = `<h1>${this.title}`
+    }
     /*
       what to do when an attribute has changed
       name is the attribute name that has changed
@@ -53,7 +58,7 @@ class CustomElement extends HTMLElement{
 
 /*
   this component can be placed in the document using the notation
-  <custom-element name="element name here"></custom-element>
+  <custom-element title="element name here"></custom-element>
   to change the name of the element in the dom, change the 
   value in the quotation marks. 
 */
