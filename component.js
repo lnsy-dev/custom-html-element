@@ -22,7 +22,13 @@ class CustomElement extends HTMLElement{
       the this keyword refers to the HTML component itself, and you
       can treat it as any DOM object 
     */
-    this.innerHTML = '<h1>Custom Element</h1>'
+    
+    this.name = this.getAttribute('name')
+    if(this.name === null){
+      this.name = 'CUSTOM ELEMENT'
+    }
+    
+    this.innerHTML = `<h1>${this.name}</h1>`
   }
   
   static get observedAttributes() {
