@@ -18,11 +18,11 @@ https://codepen.io/lindseymysse/pen/ExWZEEr
 class CustomElement extends HTMLElement {
    constructor() {
     super()
-    const shadow = this.attachShadow({mode: 'open'})
+    this.shadow = this.attachShadow({mode: 'open'})
     const div = document.createElement('div')
     const style = document.createElement('style')
-    shadow.appendChild(style)
-    shadow.appendChild(div)
+    this.shadow.appendChild(style)
+    this.shadow.appendChild(div)
   }
   
   connectedCallback(){
@@ -38,7 +38,7 @@ class CustomElement extends HTMLElement {
       this.title = 'CUSTOM ELEMENT'
     }
     
-    this.innerHTML = `<h1>${this.title}</h1>`
+    this.shadow.innerHTML = `<h1>${this.title}</h1>`
   }
   
   static get observedAttributes() {
