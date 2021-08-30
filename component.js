@@ -15,7 +15,16 @@ https://codepen.io/lindseymysse/pen/ExWZEEr
 
 
 
-class CustomElement extends HTMLElement{
+class CustomElement extends HTMLElement {
+   constructor() {
+    super()
+    const shadow = this.attachShadow({mode: 'open'})
+    const div = document.createElement('div')
+    const style = document.createElement('style')
+    shadow.appendChild(style)
+    shadow.appendChild(div)
+  }
+  
   connectedCallback(){
     /* 
       this function runs when the component is connected to the dom. 
@@ -53,6 +62,17 @@ class CustomElement extends HTMLElement{
       an example:
       document.querySelector('custom-element').setAttribute('message', 'Hello World')
     */
+  }
+  connectedCallback() {
+    console.log('Custom square element added to page.')
+  }
+
+  disconnectedCallback() {
+    console.log('Custom square element removed from page.')
+  }
+
+  adoptedCallback() {
+    console.log('Custom square element moved to new page.')
   }
 }
 
