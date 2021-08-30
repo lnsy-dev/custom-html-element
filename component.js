@@ -14,7 +14,6 @@ https://codepen.io/lindseymysse/pen/ExWZEEr
 */
 
 
-
 class CustomElement extends HTMLElement {
    constructor() {
     super()
@@ -23,21 +22,18 @@ class CustomElement extends HTMLElement {
     const style = document.createElement('style')
     this.shadow.appendChild(style)
     this.shadow.appendChild(div)
-  }
-  
-  connectedCallback(){
-    /* 
+  }   
+  /* 
       this function runs when the component is connected to the dom. 
       the this keyword refers to the HTML component itself, and you
       can treat it as any DOM object 
-    */
-    
-    // get the attribute called name, if it is null assign a new one
+   */
+  connectedCallback(){
+    // get the attribute called title, if it is null assign a new one
     this.title = this.getAttribute('title')
     if(this.title === null){
       this.title = 'CUSTOM ELEMENT'
-    }
-    
+    } 
     this.shadow.innerHTML = `<h1>${this.title}</h1>`
   }
   
@@ -45,23 +41,22 @@ class CustomElement extends HTMLElement {
     // an array of attribute names you want to watch for this component
     return ['title'];
   }
+  /*
+    what to do when an attribute has changed
+    name is the attribute name that has changed
+    old_value is the old name of the attribute
+    new_value is the new name of the attribute
 
+    To change update this element, access it like any other
+    HTML element and use setAttribute() to make changes.
+    an example:
+    document.querySelector('custom-element').setAttribute('message', 'Hello World')
+  */
   attributeChangedCallback(name, old_value, new_value){
     if(name  === 'title'){
       this.title = new_value
-      this.innerHTML = `<h1>${this.title}`
+      this.innerHTML = `<h1>${this.title}</h1>`
     }
-    /*
-      what to do when an attribute has changed
-      name is the attribute name that has changed
-      old_value is the old name of the attribute
-      new_value is the new name of the attribute
-    
-      To change update this element, access it like any other
-      HTML element and use setAttribute() to make changes.
-      an example:
-      document.querySelector('custom-element').setAttribute('message', 'Hello World')
-    */
   }
   connectedCallback() {
     console.log('Custom square element added to page.')
@@ -70,7 +65,6 @@ class CustomElement extends HTMLElement {
   disconnectedCallback() {
     console.log('Custom square element removed from page.')
   }
-
   adoptedCallback() {
     console.log('Custom square element moved to new page.')
   }
