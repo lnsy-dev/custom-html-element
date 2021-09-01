@@ -58,9 +58,6 @@ class CustomElement extends HTMLElement {
       this.innerHTML = `<h1>${this.title}</h1>`
     }
   }
-  connectedCallback() {
-    console.log('Custom square element added to page.')
-  }
 
   disconnectedCallback() {
     console.log('Custom square element removed from page.')
