@@ -15,14 +15,7 @@ https://codepen.io/lindseymysse/pen/ExWZEEr
 
 
 class CustomElement extends HTMLElement {
-   constructor() {
-    super()
-    this.shadow = this.attachShadow({mode: 'open'})
-    const div = document.createElement('div')
-    const style = document.createElement('style')
-    this.shadow.appendChild(style)
-    this.shadow.appendChild(div)
-  }   
+
   /* 
       this function runs when the component is connected to the dom. 
       the this keyword refers to the HTML component itself, and you
