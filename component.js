@@ -27,7 +27,7 @@ class CustomElement extends HTMLElement {
     if(this.title === null){
       this.title = 'CUSTOM ELEMENT'
     } 
-    this.shadow.innerHTML = `<h1>${this.title}</h1>`
+    this.innerHTML = `<h1>${this.title}</h1>`
   }
   
   static get observedAttributes() {
