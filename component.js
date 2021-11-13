@@ -43,7 +43,7 @@ class CustomElement extends HTMLElement {
     To change update this element, access it like any other
     HTML element and use setAttribute() to make changes.
     an example:
-    document.querySelector('custom-element').setAttribute('message', 'Hello World')
+    document.querySelector('custom-element').setAttribute('title', 'Hello World')
   */
   attributeChangedCallback(name, old_value, new_value){
     if(name  === 'title'){
