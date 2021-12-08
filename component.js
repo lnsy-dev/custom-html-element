@@ -17,10 +17,11 @@ https://codepen.io/lindseymysse/pen/ExWZEEr
 class CustomElement extends HTMLElement {
 
   /* 
-      this function runs when the component is connected to the dom. 
-      the this keyword refers to the HTML component itself, and you
-      can treat it as any DOM object 
-   */
+    the connectedCallback function runs when the component is connected to the dom. 
+    the *this* keyword refers to the HTML component itself, and you
+    can treat it as any DOM object 
+  */
+  
   connectedCallback(){
     // get the attribute called title, if it is null assign a new one
     this.title = this.getAttribute('title')
@@ -35,13 +36,12 @@ class CustomElement extends HTMLElement {
     return ['title'];
   }
   /*
-    what to do when an attribute has changed
+    what to do when an attribute has changed 
     name is the attribute name that has changed
     old_value is the old name of the attribute
     new_value is the new name of the attribute
 
-    To change update this element, access it like any other
-    HTML element and use setAttribute() to make changes.
+    To update this element access it like any other HTML element and use setAttribute() to make changes.
     an example:
     document.querySelector('custom-element').setAttribute('title', 'Hello World')
   */
@@ -51,6 +51,19 @@ class CustomElement extends HTMLElement {
       this.innerHTML = `<h1>${this.title}</h1>`
     }
   }
+  
+  /*  
+  
+    This runs when the element is removed from the dom.
+    
+    Be warned: if you delete its parent div it will not run but still be removed. 
+    
+    If you want to have complex remove functions, it is better to write your own
+    custom remove function and step through and remove child elements individually. 
+    
+    Something like [...this.children].forEach(child => child.remove()) should work.
+  
+  */
 
   disconnectedCallback() {
     console.log('Custom element removed from page.')
