@@ -1,3 +1,9 @@
+# Depreciated
+
+The lovely people at Javascript.Info have an article about Custom HTML Elements that is better than this boilerplate: https://javascript.info/custom-elements
+
+Custom HTML Elements FTW!
+
 # custom-html-element
 
 This is a boilerplate of the HTML Custom Element API: https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements
