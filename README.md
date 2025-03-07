@@ -1,4 +1,4 @@
-# Depreciated
+# Deprecated
 
 The lovely people at Javascript.Info have an article about Custom HTML Elements that is better than this boilerplate: https://javascript.info/custom-elements
 
